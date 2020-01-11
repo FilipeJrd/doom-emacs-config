@@ -2,6 +2,7 @@
 
 ;; Place your private configuration here
 (mac-auto-operator-composition-mode t)
+(setq display-line-numbers-type 'relative)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (add-hook 'after-save-hook 'magit-after-save-refresh-status t)
 (setq doom-font (font-spec :family "Fira Code Retina" :size 13))
@@ -53,7 +54,3 @@
     (fact 1)
     (facts 1)
     (flow 1)))
-
-(after! cider-mode
-  (setq cider-overlays-use-font-lock t)
-  (setq cider-repl-pop-to-buffer-on-connect nil))
