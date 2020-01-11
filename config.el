@@ -1,7 +1,6 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
-(mac-auto-operator-composition-mode t)
 (setq display-line-numbers-type 'relative)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (add-hook 'after-save-hook 'magit-after-save-refresh-status t)
